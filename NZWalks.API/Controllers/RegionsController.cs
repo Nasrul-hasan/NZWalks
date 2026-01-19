@@ -20,24 +20,6 @@ namespace NZWalks.API.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            //var regions = new List<Region>
-            //{
-            //    new Region
-            //    {
-            //        Id = Guid.NewGuid(),
-            //        Name = "Wellington",
-            //        Code = "WGN",
-            //        RegionImageUrl = "https://www.expedia.ca/Wellington.dx6127327"
-            //    },
-            //     new Region
-            //    {
-            //        Id = Guid.NewGuid(),
-            //        Name = "Auckland Regions",
-            //        Code = "WGN",
-            //        RegionImageUrl = "https://www.geocurrents.info/blog/2023/11/01/neighborhood-stereotypes-and-recent-voting-patterns-in-auckland-new-zealand/"
-            //    }
-            //};
-
             // 1.Get data from Database- Domain Model
             var regionsDomain = dbContext.Regions.ToList();
             // 2.Map Domain Modlesl to DTOs
